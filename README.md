@@ -63,10 +63,16 @@
 <label for="countryFilter">Select Country:</label>
 <select id="countryFilter">
   <option value="All">All</option>
-  <option value="United States">United States</option>
-  <option value="United Kingdom">United Kingdom</option>
+  <option value="Bangladesh">Bangladesh</option>
+  <option value="China">China</option>
+  <option value="Germany">Germany</option>
+  <option value="Greece">Greece</option>
   <option value="India">India</option>
-  <option value="Global">Global</option>
+  <option value="Japan">Japan</option>
+  <option value="Singapore">Singapore</option>
+  <option value="South Korea">South Korea</option>
+  <option value="UAE - Dubai">UAE - Dubai</option>
+  <option value="USA">USA</option>
 </select>
 
 <table id="holidayTable">
@@ -74,49 +80,28 @@
     <tr><th>Holiday</th><th>Date</th><th>Country</th></tr>
   </thead>
   <tbody>
-    <!-- United States -->
-    <tr><td>New Year’s Day</td><td>01-Jan-2026</td><td>United States</td></tr>
-    <tr><td>Independence Day</td><td>04-Jul-2026</td><td>United States</td></tr>
-    <tr><td>Labor Day</td><td>07-Sep-2026</td><td>United States</td></tr>
-    <tr><td>Thanksgiving</td><td>26-Nov-2026</td><td>United States</td></tr>
-    <tr><td>Christmas Day</td><td>25-Dec-2026</td><td>United States</td></tr>
+    <!-- Bangladesh -->
+    <tr><td>Language Movement Day</td><td>Feb 21</td><td>Bangladesh</td></tr>
+    <tr><td>Jamatul Bida</td><td>Mar 20</td><td>Bangladesh</td></tr>
+    <tr><td>Eid Al Fitr (Tentative)</td><td>Mar 21</td><td>Bangladesh</td></tr>
+    <tr><td>Independence Day</td><td>Mar 26</td><td>Bangladesh</td></tr>
+    <tr><td>May Day</td><td>May 1</td><td>Bangladesh</td></tr>
+    <tr><td>Eid Al Adha (Tentative)</td><td>May 28</td><td>Bangladesh</td></tr>
+    <tr><td>Mass Uprising Day</td><td>Aug 5</td><td>Bangladesh</td></tr>
+    <tr><td>Eid-e-Miladunnabi (PBUH)</td><td>Aug 26</td><td>Bangladesh</td></tr>
+    <tr><td>Janmashtami</td><td>Sept 4</td><td>Bangladesh</td></tr>
+    <tr><td>Victory Day</td><td>Dec 16</td><td>Bangladesh</td></tr>
+    <tr><td>Christmas Day</td><td>Dec 25</td><td>Bangladesh</td></tr>
 
-    <!-- United Kingdom -->
-    <tr><td>New Year’s Day</td><td>01-Jan-2026</td><td>United Kingdom</td></tr>
-    <tr><td>Good Friday</td><td>03-Apr-2026</td><td>United Kingdom</td></tr>
-    <tr><td>Summer Bank Holiday</td><td>31-Aug-2026</td><td>United Kingdom</td></tr>
-    <tr><td>Christmas Day</td><td>25-Dec-2026</td><td>United Kingdom</td></tr>
+    <!-- China -->
+    <tr><td>New Year's Holiday</td><td>Jan 1-3</td><td>China</td></tr>
+    <tr><td>Spring Festival (Chinese New Year)</td><td>Feb 16-23</td><td>China</td></tr>
+    <tr><td>Tomb Sweeping Festival</td><td>Apr 6</td><td>China</td></tr>
+    <tr><td>Labour Day Holiday</td><td>May 1-5</td><td>China</td></tr>
+    <tr><td>Dragon Boat Festival</td><td>Jun 19</td><td>China</td></tr>
+    <tr><td>Mid-Autumn Festival</td><td>Sep 25</td><td>China</td></tr>
+    <tr><td>National Day</td><td>Oct 1-7</td><td>China</td></tr>
 
-    <!-- India -->
-    <tr><td>Republic Day</td><td>26-Jan-2026</td><td>India</td></tr>
-    <tr><td>Independence Day</td><td>15-Aug-2026</td><td>India</td></tr>
-    <tr><td>Diwali</td><td>08-Nov-2026</td><td>India</td></tr>
-    <tr><td>Christmas Day</td><td>25-Dec-2026</td><td>India</td></tr>
-
-    <!-- Global -->
-    <tr><td>New Year’s Day</td><td>01-Jan-2026</td><td>Global</td></tr>
-    <tr><td>International Workers’ Day</td><td>01-May-2026</td><td>Global</td></tr>
-    <tr><td>Christmas Day</td><td>25-Dec-2026</td><td>Global</td></tr>
-  </tbody>
-</table>
-
-<script>
-  const dropdown = document.getElementById("countryFilter");
-  const table = document.getElementById("holidayTable").getElementsByTagName('tbody')[0];
-
-  dropdown.addEventListener("change", function() {
-    const selected = this.value;
-    for (let i = 0; i < table.rows.length; i++) {
-      const row = table.rows[i];
-      const country = row.cells[2].innerText;
-      if (selected === "All" || country === selected) {
-        row.style.display = "";
-      } else {
-        row.style.display = "none";
-      }
-    }
-  });
-</script>
-
-</body>
-</html>
+    <!-- Germany -->
+    <tr><td>New Year's Day</td><td>Jan 1</td><td>Germany</td></tr>
+    <tr><td>Good Friday</td><td>Apr 3<
